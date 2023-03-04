@@ -1,15 +1,22 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <router-view />
-  </div>
+  <a-config-provider :locale="zhCN">
+    <div id="app">
+      <router-view />
+    </div>
+  </a-config-provider>
 </template>
 
 <script>
+import zhCN from "ant-design-vue/lib/locale-provider/zh_CN"
+
 export default {
   name: "App",
   components: {},
+  data() {
+    return {
+      zhCN,
+    }
+  },
 }
 </script>
 
@@ -18,7 +25,6 @@ html,
 body {
   width: 1920px;
   height: 1080px;
-  overflow: hidden;
   transform-origin: 0 0;
   margin: 0;
 }

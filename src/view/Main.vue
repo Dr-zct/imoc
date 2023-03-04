@@ -21,7 +21,7 @@
             {{ $route.name }}
           </a-breadcrumb-item>
         </a-breadcrumb>
-        <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
+        <a-layout-content :style="{ background: '#fff', padding: '24px' }">
           <router-view></router-view>
         </a-layout-content>
       </a-layout>
@@ -44,8 +44,8 @@ export default {
 
 <style lang="less" scoped>
 .ant-layout {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 .header {
   background-color: #2175c5;
@@ -61,5 +61,12 @@ export default {
 .breadcrumb {
   font-size: 20px;
   font-weight: bold;
+}
+/deep/ .ant-menu-item-selected {
+  background-color: #2175c5 !important;
+}
+/deep/ .ant-breadcrumb {
+  padding: 16px 24px;
+  background-color: #fff;
 }
 </style>
