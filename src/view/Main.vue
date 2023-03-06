@@ -21,7 +21,7 @@
             {{ $route.name }}
           </a-breadcrumb-item>
         </a-breadcrumb>
-        <a-layout-content :style="{ background: '#fff', padding: '24px' }">
+        <a-layout-content :style="{ background: '#fff', padding: '24px', overflow: 'scroll' }">
           <router-view></router-view>
         </a-layout-content>
       </a-layout>
@@ -48,7 +48,7 @@ export default {
   height: 100%;
 }
 .header {
-  background-color: #2175c5;
+  background-color: #33ccff;
   font-size: 20px;
   color: #fff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -63,7 +63,7 @@ export default {
   font-weight: bold;
 }
 /deep/ .ant-menu-item-selected {
-  background-color: #2175c5 !important;
+  background-color: #33ccff !important;
 }
 /deep/ .ant-breadcrumb {
   padding: 16px 24px;

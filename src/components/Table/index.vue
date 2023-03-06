@@ -80,4 +80,7 @@ export default {
   position: relative;
   top: -32px;
 }
+/deep/ .ant-table-thead > tr > th {
+  background: #33ccff !important;
+}
 </style>
